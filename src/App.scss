@@ -1,0 +1,144 @@
+$border-color: #e8eaec;
+$black: #22232b;
+$blue: #0d7bff;
+$white: #fff;
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+
+  &.small {
+    font-size: 11px;
+  }
+
+  &.blue {
+    background-color: $blue;
+    color: $white;
+    padding: 8px 15px;
+  }
+
+  &.transparent {
+    padding: 8px 15px;
+  }
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.wrapper {
+  border: solid 2px $border-color;
+  border-radius: 4px;
+}
+
+#search-form {
+  position: relative;
+  width: 100%;
+}
+
+.search-form__input {
+  padding: 12px 160px 12px 18px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.search-form__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 8px 2px;
+
+  .submit-button {
+    height: 100%;
+    width: 20px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .divider {
+    width: 1px;
+    height: 100%;
+    background-color: $border-color;
+    margin: 0 15px;
+  }
+
+  .open {
+    padding: 10px;
+  }
+
+  .close {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 14px;
+
+    :nth-child(2) {
+      margin-left: 6px;
+    }
+  }
+}
+
+.arrow {
+  border: solid;
+  display: inline-block;
+  border-width: 0 1px 1px 0;
+  padding: 2px;
+
+  &.black {
+    border-color: $black;
+  }
+
+  &.white {
+    border-color: $white;
+  }
+
+  &.down {
+    transform: rotate(45deg);
+  }
+
+  &.right {
+    transform: rotate(-45deg);
+  }
+}
+
+.ace_gutter {
+  background: #fff !important;
+}
+
+.code-block {
+  margin-top: 3px;
+  display: flex;
+  .button-group {
+    display: inline-flex;
+    padding: 0 13px;
+    > :nth-child(2) {
+      margin-left: 10px;
+    }
+    button {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.ace_gutter-cell {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
